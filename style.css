@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+  background-color: #fff;
+}
+
+.formularios-de-notas{
+  background-color: cornflowerblue;
+  text-align: center;
+  width: 50%;
+  margin:100px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.formularios{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nota-1,.nota-2,.nota-3{
+  width: 10%;
+
+}
+
+h2{
+  padding-bottom: 20px;
+}
+
+h3{
+  margin-right: 15px;
+}
+
+.btn-nota{
+  margin-top: 30px;
+  border: none;
+  background: darkcyan;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.modal-background{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+}
+
+.modal{
+  background: #fff;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.resultado{
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+    display: flex;
+  }
+
+  100%{
+    opacity: 1;
+    display: flex;
+  }
+}
+
+a{
+  margin-left:80% ;
+}
+
+.red{
+  color: red;
+  font-size: 30px;
+}
+
+.green{
+  color: green;
+  font-size: 30px;
+}
+
+.bxs-happy,.bxs-angry{
+  margin-right: 5%;
+  color: orange;
+  font-size: 30px;
+}
+
+@media (max-width:600px) {
+  .formularios-de-notas{
+    width: 90%;
+  }
+  
+}
